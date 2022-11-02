@@ -1,0 +1,43 @@
+{
+	"$schema": "https://json.schemastore.org/block.json",
+	"apiVersion": 2,
+	"name": "tbblocks/timelineitem",
+	"version": "0.1.5",
+	"title": "Timeline Item",
+	"category": "theme",
+    "keywords": ["timeline"],
+	"description": "A gutenberg block to use for Timeline.",
+	"supports": {
+		"html": false,
+		"anchor": true
+	},
+	"attributes": {
+		"itemId": {
+            "type": "number",
+            "default": 1
+        },
+		"year": {
+			"type": "string",
+			"default": "1986"
+		},
+		"orientation": {
+			"type": "string",
+			"default": "left"
+		},
+		"hideXS": {
+            "type": "boolean",
+            "default": false
+        },
+        "hideMD": {
+            "type": "boolean",
+            "default": false
+        },
+        "hideLG": {
+            "type": "boolean",
+            "default": false
+        }
+	},
+    "parent": [" tbblocks/timeline "],
+	"textdomain": "tbblocks",
+    "editorScript": "blocks-4.js"
+}

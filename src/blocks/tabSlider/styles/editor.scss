@@ -1,0 +1,23 @@
+@import '../../../styles/variables';
+.wp-block{
+    .tabSlider{
+        .block-editor-inner-blocks{
+            width: 100%;
+        }
+        [data-type="tbblocks/tabslideritem"] {
+            display: none;
+            .block-editor-block-list__layout {
+                position: static;
+            }
+        }
+        @for $index from 1 through 50 {
+    
+            &.wp-block-tb-tab-slider--current-slide-#{$index} [data-slide="#{$index}"] {
+                display: block;
+            }
+        }
+        .tab--text-slider .tab--text-slider__content{
+            bottom: -60px;
+        }
+    }
+}

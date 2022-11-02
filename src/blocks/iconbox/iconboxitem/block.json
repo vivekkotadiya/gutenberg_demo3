@@ -1,0 +1,23 @@
+{
+	"$schema": "https://json.schemastore.org/block.json",
+	"apiVersion": 2,
+	"name": "tbblocks/iconboxitem",
+	"version": "0.1.0",
+	"title": "IconBoxItem",
+	"category": "theme",
+	"keywords": [ "icon", "iconboxitem" ],
+	"description": "A gutenberg block to use for Icon box item.",
+	"supports": {
+		"html": false,
+		"anchor": true
+	},
+	"attributes": {
+		"borderLeft": {
+			"type": "boolean",
+			"default": false
+		}
+	},
+	"textdomain": "tbblocks",
+    "parent": [ "tbblocks/iconbox" ],
+	"editorScript": "blocks-5.js"
+}

@@ -1,0 +1,52 @@
+{
+	"$schema": "https://json.schemastore.org/block.json",
+	"apiVersion": 2,
+	"name": "tbblocks/preview",
+	"version": "0.1.5",
+	"title": "Preview",
+	"category": "theme",
+	"keywords": [ "preview", "detail" ],
+	"description": "A gutenberg block to use for Preview.",
+	"supports": {
+		"html": false,
+		"anchor": true
+	},
+	"attributes": {
+		"imageId": {
+            "type": "number"
+        },
+        "imageUrl": {
+            "type": "string"
+        },
+        "xsimageUrl": {
+            "type": "string"
+        },
+        "mdimageUrl": {
+            "type": "string"
+        },
+        "title": {
+            "type": "string"
+        },
+        "textOverlay": {
+            "type": "string"
+        },
+        "link": {
+            "type": "string"
+        },
+        "hideXS": {
+            "type": "boolean",
+            "default": false
+        },
+        "hideMD": {
+            "type": "boolean",
+            "default": false
+        },
+        "hideLG": {
+            "type": "boolean",
+            "default": false
+        }
+	},
+	"textdomain": "tbblocks",
+    "parent": [ "tbblocks/column" ],
+	"editorScript": "blocks-3.js"
+}

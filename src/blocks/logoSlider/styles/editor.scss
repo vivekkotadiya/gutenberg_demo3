@@ -1,0 +1,50 @@
+@import '../../../styles/variables';
+.wp-block .slider-logo{
+    [data-type="tbblocks/logoslideritem"] {
+		display: none;
+		.block-editor-block-list__layout {
+			position: static;
+		}
+	}
+    .placeholder__img{
+        img{
+            max-height: 200px;
+        }
+    }
+    .glide__slides{
+        justify-content: center;
+    }
+    @for $index from 1 through 50 {
+
+        &.wp-block-tb-logo-slider--current-slide-#{$index} [data-slide="#{$index}"] {
+            display: block;
+        }
+    }
+    .logo-slider-controls{
+        button{
+            &.prev-slide{
+                left: 20px;
+            }
+            &.next-slide{
+                right: 20px;
+            }
+        }
+    }
+    a{
+        pointer-events: none;
+    }
+}
+@media screen and (max-width: 1440px){
+    .wp-block{
+        .logo-slider-controls{
+            button{
+                &.prev-slide{
+                    left: 20px;
+                }
+                &.next-slide{
+                    right: 20px;
+                }
+            }
+        }
+    }
+}

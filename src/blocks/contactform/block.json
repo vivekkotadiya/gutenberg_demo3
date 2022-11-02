@@ -1,0 +1,21 @@
+{
+	"$schema": "https://json.schemastore.org/block.json",
+	"apiVersion": 2,
+	"name": "tbblocks/contactform",
+	"version": "0.1.5",
+	"attributes": {
+        "postType": {
+            "type": "integer"
+        },
+		"postTitle": {
+            "type": "string"
+        }
+	},
+	"title": "Contact Form",
+	"category": "theme",
+	"description": "A gutenberg block to Generate Contact Form.",
+	"keywords": [ "form", "contact form" ],
+	"parent": [ "tbblocks/column" ],
+	"textdomain": "tbblocks",
+	"editorScript": "blocks-5"
+}

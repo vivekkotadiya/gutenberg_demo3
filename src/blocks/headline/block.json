@@ -1,0 +1,49 @@
+{
+	"$schema": "https://json.schemastore.org/block.json",
+	"apiVersion": 2,
+	"name": "tbblocks/headline",
+	"version": "0.1.5",
+	"title": "Headline",
+	"category": "theme",
+	"keywords": [ "title", "subtitle" ],
+	"description": "A gutenberg block to use for Heading.",
+	"supports": {
+		"html": false,
+		"anchor": true
+	},
+	"attributes": {
+		"textAlign": {
+			"type": "string",
+			"default": ""
+		},
+		"content": {
+			"type": "string",
+			"source": "html",
+			"selector": "h1,h2,h3,h4,h5,h6",
+			"default": ""
+		},
+		"level": {
+			"type": "number",
+			"default": 1
+		},
+		"placeholder": {
+			"type": "string",
+			"default": "Heading"
+		},
+		"headStyle": {
+			"type": "string",
+			"default": "one"
+		},
+		"headColor": {
+			"type": "string",
+			"default": "#000000"
+		},
+		"headColorClass": {
+			"type": "string",
+			"default": "five"
+		}
+	},
+	"textdomain": "tbblocks",
+	"parent": [ "tbblocks/column" ],
+	"editorScript": "blocks-3.js"
+}

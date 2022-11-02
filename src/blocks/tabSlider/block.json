@@ -1,0 +1,17 @@
+{
+	"$schema": "https://json.schemastore.org/block.json",
+	"apiVersion": 2,
+	"name": "tbblocks/tabslider",
+	"version": "0.1.5",
+	"title": "Tab Slider",
+	"category": "theme",
+    "keywords": ["slider", "tab", "item"],
+	"description": "A gutenberg block to use for Tab Slider.",
+	"supports": {
+		"html": false,
+		"anchor": true
+	},
+	"parent": [ "tbblocks/section" ],
+	"textdomain": "tbblocks",
+	"editorScript": "blocks-4.js"
+}

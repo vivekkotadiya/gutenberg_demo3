@@ -1,0 +1,20 @@
+
+// global editor
+@import "./editor/editor.scss";
+
+// @import "../blocks/**/editor.scss";
+@import "../blocks/section/styles/editor.scss";
+@import "../blocks/row/styles/editor.scss";
+@import "../blocks/header/styles/editor.scss";
+@import "../blocks/header/navigation/styles/editor.scss";
+@import "../blocks/map/styles/editor.scss";
+@import "../blocks/button/styles/editor.scss";
+@import "../blocks/timeline/styles/editor.scss";
+@import "../blocks/slider/styles/editor.scss";
+@import "../blocks/logoslider/styles/editor.scss";
+@import "../blocks/tabslider/styles/editor.scss";
+@import "../blocks/contactperson/styles/editor.scss";
+
+
+//media global
+@import "./style";

@@ -1,0 +1,44 @@
+#breadcrumbs{
+    padding: 50px 0px;
+    min-height: 100px;
+    font-family: $font-body;
+    .headline--style-two{
+        margin-bottom: 0px;
+    }
+    .breadcrumb{
+        list-style: none;
+        display: flex;
+        column-gap: 12px;
+        padding: 0;
+        margin: 0;
+        justify-content: end;
+        li, a, span{
+            font-size: 14px;
+            line-height: 16px;
+            text-decoration: none;
+            display: block;
+            color: $color-four;
+        }
+        li{
+            &.active{
+                color: $color-eight;   
+            }
+        }
+
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    #breadcrumbs{
+        .headline--style-two{
+            text-align: center;
+            margin-bottom: 15px;
+        }
+        .breadcrumb{
+            justify-content: center;
+        }
+    }
+}
+
+
+

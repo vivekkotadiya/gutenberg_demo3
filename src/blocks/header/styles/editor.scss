@@ -1,0 +1,9 @@
+@import '../../../styles/variables';
+
+.site--logo a{
+    pointer-events: none;
+}
+
+.wp-block-tbblocks-header{
+    font-family: $font-body;
+}

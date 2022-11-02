@@ -1,0 +1,56 @@
+.ci--wrapper{
+    font-family: $font-body;
+    color: $color-one;
+    .ci--list{
+        display: flex;
+        .ci--col {
+            width: 33.3333%;
+            padding: 120px 7% 120px 7%;
+            .ci--content{
+                min-height: 76px;
+                display: flex;
+                column-gap: 30px;
+                .ci--info{
+                    h3{
+                        font-size: 14px;
+                        line-height: 16px;
+                        font-weight: bold;
+                        margin-bottom: 10px;
+                        margin-top:0;
+                    }
+                    span, a{
+                        color: $color-one;
+                        font-size: 14px;
+                        line-height: 20px;
+                        display: block;
+                        text-decoration: none;
+                    }
+                }
+
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .ci--wrapper{
+        .ci--list{
+            flex-flow: column;
+            .ci--col {
+                width: 100%;
+                padding: 60px 7% 60px 7%;
+            }
+        }
+    }
+}
+
+
+@media only screen and (max-width: 460px) {
+    .ci--wrapper{
+        .ci--list{
+            .ci--col {
+                padding: 40px 7% 40px 7%;
+            }
+        }
+    }
+}

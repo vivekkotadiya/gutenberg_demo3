@@ -1,0 +1,38 @@
+{
+	"$schema": "https://json.schemastore.org/block.json",
+	"apiVersion": 2,
+	"name": "tbblocks/header",
+	"version": "0.1.5",
+	"title": "Header",
+	"category": "theme",
+	"description": "A gutenberg block for header.",
+	"attributes": {
+		"telefon": {
+			"type": "string",
+			"default": "07150 / 910-0"
+		},
+		"telefonLink": {
+			"type": "string",
+			"default": "tel:071509100"
+		},		
+		"email": {
+			"type": "string",
+			"default": "info@tabler.de"
+		},
+		"emailLink": {
+			"type": "string",
+			"default": "mailto:info@tabler.de"
+		},
+		"address": {
+			"type": "string",
+			"default": "Lingwiesenstraße 10, 70825 Korntal-Münchingen"
+		},
+		"site_url": {
+			"type": "string",
+			"default": "/"
+		}
+	},
+	"keywords": ["Header", "TbBlocks"],
+	"textdomain": "tbblocks",
+	"editorScript": "file:./dist/blocks-2.js"
+}

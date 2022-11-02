@@ -1,0 +1,43 @@
+{
+	"$schema": "https://json.schemastore.org/block.json",
+	"apiVersion": 2,
+	"name": "tbblocks/person",
+	"version": "0.1.0",
+	"title": "Contact Person",
+	"category": "theme",
+	"keywords": [ "icon", "Person", "Collection" ],
+	"description": "A gutenberg block to use for Contact person.",
+	"supports": {
+		"html": true,
+		"anchor": true
+	},
+	"attributes": {
+        "imageUrl" : {
+            "type": "string",
+            "default": ""
+        },
+		"xsimageUrl" : {
+			"type": "string",
+			"default": ""
+		},
+        "mdimageUrl" : {
+			"type": "string",
+			"default": ""
+		},
+        "imageId" : {
+            "type": "number",
+            "default": ""
+        },
+        "altText" : {
+            "type": "string",
+            "default": ""
+        },
+		"layoutStyle" : {
+            "type": "string",
+            "default": "small"
+        }	
+	},
+	"textdomain": "tbblocks",
+	"parent": [ "tbblocks/contactperson" ],
+	"editorScript": "blocks-5.js"
+}

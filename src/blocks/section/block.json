@@ -1,0 +1,75 @@
+{
+	"$schema": "https://json.schemastore.org/block.json",
+	"apiVersion": 2,
+	"name": "tbblocks/section",
+	"version": "0.1.5",
+	"title": "Section",
+	"category": "theme",
+	"description": "A gutenberg block to use Section.",
+	"supports": {
+		"html": false,
+		"anchor": true
+	},
+	"attributes": {
+		"padding": {
+			"type": "number",
+			"default": "1"
+		},
+		"bgResponsiveMode": {
+			"type": "string",
+			"default": "xs"
+		},
+		"xlbackgroundImageId": {
+			"type": "number",
+			"default": ""
+		},
+		"xlbackgroundImagesrc": {
+			"type": "string",
+			"default": ""
+		},
+		"mdbackgroundImageId": {
+			"type": "number",
+			"default": ""
+		},
+		"mdbackgroundImagesrc": {
+			"type": "string",
+			"default": ""
+		},	
+		"xsbackgroundImageId": {
+			"type": "number",
+			"default": ""
+		},
+		"xsbackgroundImagesrc": {
+			"type": "string",
+			"default": ""
+		},
+		"backgroundColor": {
+			"type":"string",
+			"default": ""
+		},
+		"backgroundColorClass": {
+			"type": "string",
+			"default": ""
+		},
+		"anchor": {
+			"type": "string",
+			"default": ""
+		},
+		"hideLG": {
+			"type": "boolean",
+			"default": false
+		},
+		"hideMD": {
+			"type": "boolean",
+			"default": false
+		},
+		"hideXS": {
+			"type": "boolean",
+			"default": false
+		}
+		
+	},
+	"keywords": ["section", "block", "TbBlocks"],
+	"textdomain": "tbblocks",
+	"editorScript": "file:./blocks-1.js"
+}

@@ -1,0 +1,176 @@
+.button--cta{
+    padding: 18px 25px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: bold;
+    font-family: $font-body;
+    width: max-content;
+    svg{
+        margin-left: 10px;
+        left: 0;
+        transition: all 0.4s ease;
+        position: relative;
+    }
+    &:hover{ 
+        svg{
+            left: 5px; 
+        }
+       
+    }
+}
+
+
+.button--align{
+    &-center{
+        margin: 0px auto;
+    }
+    &-left{
+        margin-right: auto;
+    }
+    &-right{
+        margin-left: auto;
+    }
+}
+.button--width{
+    &-one{
+        width: 25%;
+    }
+    &-two{
+        width: 50%;
+    }
+    &-three{
+        width: 75%;
+    }
+    &-four{
+        width: 100%;
+    }
+}
+
+
+.button--color{
+    &-one{
+        background-color: $color-five;
+        border-color: $color-five;
+        color: $color-one;
+        &:hover{ 
+            color: $color-one; 
+        }
+        & svg{
+            fill: $color-one; 
+        }
+    }
+    &-two{
+        background-color: $color-four;
+        border-color: $color-four;
+        color: $color-one;
+        &:hover{ 
+            color: $color-one; 
+        }
+        & svg{
+            fill: $color-one; 
+        }
+    }
+    &-three{
+        background-color: $color-three;
+        border-color: $color-three;
+        color: $color-four;
+        &:hover{ 
+            color: $color-four; 
+        }
+        & svg{
+            fill: $color-four; 
+        }
+    }
+    &-four{
+        background-color: $color-one;
+        border-color: $color-one;
+        color: $color-four;
+        &:hover{ 
+            color: $color-four;
+        }
+        & svg{
+            fill: $color-four; 
+        } 
+    }
+    &-five{
+        background-color: $color-two;
+        border-color: $color-two;
+        color: $color-four;
+        &:hover{ 
+            color: $color-four;
+        }
+        & svg{
+            fill: $color-four; 
+        }
+    }
+}
+
+
+.button--style{
+    &-one{
+        border-width: 2px;
+        border-color: transparent;
+        border-style: solid;
+    }
+    &-two{
+        background-color: transparent;
+        border-width: 2px;
+        border-style: solid;
+    }
+}
+
+
+
+.button--style-two{
+    &.button--color-four{
+        color: $color-one;
+        &:hover{ 
+            color: $color-one;
+        }
+        & svg{
+            fill: $color-one; 
+        }
+    } 
+    &.button--color-three{
+        color: $color-three;
+        &:hover{ 
+            color: $color-three;
+        }
+        & svg{
+            fill: $color-three; 
+        }
+    }
+    &.button--color-two{
+        color: $color-four;
+        &:hover{ 
+            color: $color-four;
+        }
+        & svg{
+            fill: $color-four; 
+        }
+    }
+    &.button--color-one{
+        color: $color-five;
+        &:hover{ 
+            color: $color-five;
+        }
+        & svg{
+            fill: $color-five; 
+        }
+    }
+    &.button--color-five{
+        color: $color-two;
+        &:hover{ 
+            color: $color-two;
+        }
+        & svg{
+            fill: $color-two; 
+        }
+    }  
+
+}

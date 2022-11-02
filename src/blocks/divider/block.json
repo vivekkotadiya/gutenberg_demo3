@@ -1,0 +1,31 @@
+{
+	"$schema": "https://json.schemastore.org/block.json",
+	"apiVersion": 2,
+	"name": "tbblocks/divider",
+	"version": "0.1.5",
+	"title": "Divider",
+	"category": "theme",
+    "keywords": ["divider", "spacer", "tbblocks"],
+	"description": "A gutenberg block to use for Divider.",
+	"supports": {
+		"html": false,
+		"anchor": true
+	},
+	"attributes": {
+		"style" : {
+			"type": "string",
+			"default": "one"
+		},
+        "paddingTop" : {
+            "type": "string",
+            "default": "1"
+        },
+        "paddingBottom" : {
+            "type": "string",
+            "default": "1"
+        }
+	},
+	"parent": [ "tbblocks/section", "tbblocks/column" ],
+	"textdomain": "tbblocks",
+	"editorScript": "blocks-3.js"
+}

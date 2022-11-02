@@ -1,0 +1,40 @@
+{
+	"$schema": "https://json.schemastore.org/block.json",
+	"apiVersion": 2,
+	"name": "tbblocks/list",
+	"version": "0.1.5",
+	"title": "List",
+	"category": "theme",
+    "keywords": ["list", "item", "list item"],
+	"description": "A gutenberg block to use for List.",
+	"supports": {
+		"html": false,
+		"anchor": true
+	},
+	"attributes": {
+		"listStyle" : {
+			"type": "string",
+			"default": "one"
+		},
+        "values": {
+			"type": "string",
+			"source": "html",
+			"selector": "ul",
+			"multiline": "li",
+			"__unstableMultilineWrapperTags": [ "ul" ],
+			"default": "",
+			"__experimentalRole": "content"
+		},
+		"listColor": {
+			"type": "string",
+			"default": "#B6B6B6"
+		},
+		"listColorClass": {
+			"type": "string",
+			"default": "three"
+		}
+	},
+	"textdomain": "tbblocks",
+	"parent": [ "tbblocks/column" ],
+	"editorScript": "blocks-3.js"
+}

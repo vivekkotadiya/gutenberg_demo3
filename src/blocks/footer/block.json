@@ -1,0 +1,21 @@
+{
+	"$schema": "https://json.schemastore.org/block.json",
+	"apiVersion": 2,
+	"name": "tbblocks/footer",
+	"version": "0.1.5",
+	"title": "Footer",
+	"category": "theme",
+	"description": "A gutenberg block for Footer.",
+	"supports": {
+		"anchor": true
+	},
+	"attributes": {
+		"copyright": {
+			"type": "string",
+			"default": "© 2020 DatenschutzPeter Tabler GmbH"
+		}
+	},
+	"keywords": ["Footer", "TbBlocks"],
+	"textdomain": "tbblocks",
+	"editorScript": "file:./blocks-2.js"
+}

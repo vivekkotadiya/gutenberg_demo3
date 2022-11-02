@@ -1,0 +1,66 @@
+{
+	"$schema": "https://json.schemastore.org/block.json",
+	"apiVersion": 2,
+	"name": "tbblocks/button",
+	"version": "0.1.0",
+	"title": "Button",
+	"category": "theme",
+    "keywords": ["button", "link", "tbblocks"],
+	"description": "A gutenberg block to use for Button.",
+	"supports": {
+		"html": false,
+		"anchor": true
+	},
+	"attributes": {
+		"style" : {
+			"type": "string",
+			"default": "one"
+		},
+        "align" : {
+            "type": "string",
+            "default": "left"
+        },
+		"bgcolorClass" : {
+            "type": "string",
+            "default": "one"
+        },
+		"bgcolor" : {
+            "type": "string",
+            "default": "#DD3333"
+        },
+        "width" : {
+            "type": "string",
+            "default": "inline"
+        },
+        "linkTarget": {
+			"type": "string",
+			"source": "attribute",
+			"selector": "a",
+			"attribute": "target"
+		},
+		"rel": {
+			"type": "string",
+			"source": "attribute",
+			"selector": "a",
+			"attribute": "rel"
+		},
+		"text": {
+			"type": "string",
+			"source": "html",
+			"selector": ".button--text"
+		},
+		"url": {
+			"type": "string",
+			"source": "attribute",
+			"selector": "a",
+			"attribute": "href"
+		},
+		"buttonicon": {
+			"type": "boolean",
+			"default": false
+		}
+	},
+	"parent": [ "tbblocks/column" ],
+	"textdomain": "tbblocks",
+	"editorScript": "blocks-5"
+}

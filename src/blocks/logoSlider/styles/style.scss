@@ -1,0 +1,88 @@
+@import '../../../styles/variables';
+
+.slider-logo{
+    position: relative;
+    max-width: 1400px;
+    width: 100%;
+    margin: 0px auto;
+    .glide__slides{
+        align-items: center;
+        .glide__slide{
+            .logo-slide-image{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                max-width: 200px;
+                margin: 0px auto;
+                max-height: 120px;
+                img{
+                    width: 100%;
+                }
+            }
+        }
+    }
+    .logo-slider-controls{
+        button{
+            position: absolute;
+            border-radius: 0px;
+            background-color: transparent;
+            box-shadow: unset;
+            border: 0px;
+            cursor: pointer;
+            text-align: center;
+            padding: 0px;
+            top: calc(50% - 16px);
+            &.prev-slide{
+                transform: unset;
+                left: -20px;
+            }
+            &.next-slide{
+                transform: rotate(360deg);
+                right: -20px;
+            }
+            svg{
+                vertical-align: middle;
+            }
+        }
+    }
+}
+@media screen and (max-width: 1440px) {
+    .slider-logo{
+        max-width: 1100px;
+        .logo-slider-controls{
+            button{
+                &.prev-slide{
+                    left: -50px;
+                }
+                &.next-slide{
+                    right: -50px;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 1112px){
+    .slider-logo{
+        max-width: 768px;
+    }
+}
+@media screen and (max-width: 768px){
+    .slider-logo{
+        max-width: 440px;
+    }
+}
+@media screen and (max-width: 460px){
+    .slider-logo{
+        max-width: 300px;
+        .logo-slider-controls{
+            button{
+                &.prev-slide{
+                    left: -15px;
+                }
+                &.next-slide{
+                    right: -15px;
+                }
+            }
+        }
+    }
+}

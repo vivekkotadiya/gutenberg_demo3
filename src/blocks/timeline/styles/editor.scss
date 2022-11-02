@@ -1,0 +1,70 @@
+@import '../../../styles/variables';
+.timeline__titles{
+    list-style-type: none;
+    padding: 0px;
+    margin: 30px 0px;
+    li{
+        &:first-child{
+            margin-right: 20px;
+        }
+        width: calc(50% - 10px);
+        display: inline-block;
+        text-align: center;
+        .components-button{
+            border: 1px solid $color-five;
+            background-color: $color-five;
+            color: $color-one;
+            &.has-text.has-icon{
+                justify-content: center;
+            }
+            width: 100%;
+            &:focus{
+                box-shadow: unset;
+            }
+            span{
+                height: 19px;
+            }
+        }
+    }
+}
+.wp-block{
+    .timeline{
+        position: relative;
+        padding: 15px 0px 0px;
+        .timeline__item{
+            &.timeline--align-left{
+                .timeline--item-wrap{
+                    .timeline--details-wrap{
+                        &::after{
+                            width: 11px;
+                            height: 11px;
+                            top: 24px;
+                        }
+                    }
+                }
+            }
+            &.timeline--align-right{
+                .timeline--item-wrap{
+                    .timeline--details-wrap{
+                        &::before{
+                            width: 11px;
+                            height: 11px;
+                            top: 23.4px;
+                            left: -20.5px;
+                        }
+                    }
+                }
+            }
+        }
+        .timeline__connector{
+            &::before{
+                width: 13px;
+                height: 13px;
+            }
+            &::after{
+                width: 13px;
+                height: 13px;
+            }
+        }
+    }
+}

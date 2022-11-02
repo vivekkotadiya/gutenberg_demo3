@@ -1,0 +1,23 @@
+{
+	"$schema": "https://json.schemastore.org/block.json",
+	"apiVersion": 2,
+	"name": "tbblocks/video",
+	"version": "0.1.5",
+	"title": "Video",
+	"category": "theme",
+    "keywords": ["video"],
+	"description": "A gutenberg block to use for Video.",
+	"supports": {
+		"html": false,
+		"anchor": true
+	},
+	"attributes": {
+		"videoId" : {
+			"type": "string",
+			"default": ""
+		}
+	},
+	"textdomain": "tbblocks",
+	"parent": [ "tbblocks/column" ],
+	"editorScript": "blocks-3.js"
+}

@@ -1,0 +1,17 @@
+{
+	"$schema": "https://json.schemastore.org/block.json",
+	"apiVersion": 2,
+	"name": "tbblocks/timeline",
+	"version": "0.1.5",
+	"title": "Timeline",
+	"category": "theme",
+    "keywords": ["timeline"],
+	"description": "A gutenberg block to use for Timeline.",
+	"supports": {
+		"html": false,
+		"anchor": true
+	},
+	"textdomain": "tbblocks",
+    "editorScript": "blocks-4.js",
+	"parent": ["tbblocks/section"]
+}

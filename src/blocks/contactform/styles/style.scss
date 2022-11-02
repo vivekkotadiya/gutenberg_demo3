@@ -1,0 +1,76 @@
+.contact--form{
+    label{
+        margin-bottom: 10px;
+        display: block;
+    }
+    .wpcf7-form-control-wrap{
+        margin-bottom: 25px;
+        display: block;
+    }
+    input[type="text"], textarea, input[type="email"]{
+        width: 100%;
+        border: 1px solid $color-two;
+        font-size: 22px;
+        line-height: 30px;
+        color: $color-four;
+        padding: 10px;
+        margin-bottom: 3px;
+        &:focus{
+            outline: none;
+        }
+    }
+    input[type="text"] input[type="email"]{
+        height: 50px;
+    }
+    textarea{
+        height: 250px;
+    }
+    .wpcf7-acceptance{
+        .wpcf7-list-item{
+            margin-left: 0;
+            .wpcf7-list-item-label{
+                position: relative;
+                padding-left: 46px;
+                display: block;
+                cursor: pointer;
+                &:before{
+                    content: " ";
+                    position: absolute;
+                    width: 34px;
+                    height: 34px;
+                    border: 1px solid $color-two;
+                    display: block;
+                    left: 0;
+                    top: 0;
+                   
+                }   
+            }
+            input[type="checkbox"]{
+                &:checked + {
+                    & .wpcf7-list-item-label{
+                        &:after{
+                            content: "";
+                            transform: rotate(45deg);
+                            height: 20px;
+                            width: 9px;
+                            border-bottom: 5px solid $color-five;
+                            border-right: 5px solid $color-five;
+                            position: absolute;
+                            top: 2px;
+                            left: 11px;
+
+                        }
+                    }
+                }
+            }
+        }
+        #terms{
+            display: none;
+        }
+    }
+
+    input[type="submit"]{
+        cursor: pointer;
+    }
+    
+}

@@ -1,0 +1,68 @@
+.iconbox--wrapper{
+    display: grid;
+    grid-template-columns: 1fr;
+    .iconbox{
+        display: flex;
+        padding: 15px 0px 20px 27px;
+        margin-bottom: 30px;
+        border-left: 1px solid $color-two;
+        .iconbox--icon{
+            margin-right: 20px;
+            svg{
+                width: 33px;
+                height: 33px;
+                transition: all 0.4s ease;
+                position: relative;
+                top: 0;
+            }
+        }
+        &:hover{ 
+            svg{
+                top: -5px;
+                #Ellipse_5{
+                   stroke:  $color-six;
+                  ;
+                }
+                #info-solid{
+                    fill: $color-six;
+                }
+            } 
+        }
+    }
+    .iconbox--border-left{
+        border-left: 1px solid $color-two;
+    }
+}
+
+@media only screen and (min-width: 769px) {
+    .iconbox--wrapper{
+        .iconbox{
+            padding: 30px 0px 30px 27px;
+            .iconbox--icon{
+                svg{
+                    width: 56px;
+                    height: 56px;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 1141px) {
+    .iconbox--wrapper{
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 40px;
+        .iconbox{
+            column-gap: 20px;
+            padding: 30px 0px 30px 20px;
+            .iconbox--icon{
+                svg{
+                    width: 40px;
+                    height: 40px;
+                }
+            }
+        }
+    }
+}
+
+

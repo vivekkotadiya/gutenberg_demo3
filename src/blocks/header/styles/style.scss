@@ -1,0 +1,202 @@
+
+.header--container{
+    max-width: 1920px;
+    margin: 0 auto;
+    padding: 0px 8.33%;
+}
+
+.header--nav{
+    padding: 40px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    z-index: +1040;
+    .site--logo a{
+        display: block;
+        line-height: 0;
+    }
+}
+
+.header--top{
+    &:after{
+        content: "";
+        clear: both;
+    }
+    .header--contact-list{
+        list-style: none;
+        display: flex;
+        align-items: center;
+        column-gap: 21px;
+        margin: 0;
+        padding: 20px 0px;
+        li{
+            svg{
+                position: relative;
+                margin-right: 6px;
+            }
+            a, span{
+                color: #fff;
+                text-decoration: none;
+                font-size: 14px;
+                line-height: 16px;
+                display: flex;
+                align-items: center;
+            }
+        }
+    
+    }
+}
+
+.hamburger{
+    display: block;
+    position: relative;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    width: 24px;
+    height: 20px;
+    font-size: 0;
+    text-indent: -9999px;
+    appearance: none;
+    box-shadow: none;
+    border-radius: none;
+    border: none;
+    transition: background 0.3s;
+    span{
+        display: block;
+        position: absolute;
+        top: 9px;
+        left: 0px;
+        right: 0px;
+        height: 2px;
+        background: #545454;
+        &:before, &:after{
+            content: "";
+            position: absolute;
+            display: block;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background-color: #545454;
+            transition-duration: 0.3s, 0.3s;
+            transition-delay: 0.3s, 0s;
+        }
+        &:before{
+            transition-property: top, transform;
+            top: -9px
+        }
+        &:after{
+            bottom: -9px;
+            transition-property: bottom, transform;
+        }
+    }
+
+    &.is--active{
+        span{
+            background: transparent;
+            &:before{
+                top: 0;
+                transform: rotate(45deg);
+                width: 26px;
+                left: -4px;
+                margin-left: 3px;
+                transition-delay: 0s, 0.3s;
+            }
+            &:after{
+                bottom: 0;
+                transform: rotate(-45deg);
+                width: 26px;
+                left: -4px;
+                margin-left: 3px;
+                transition-delay: 0s, 0.3s;
+            }
+        }
+    }
+}
+
+
+@media only screen and (min-width: 1141px) {
+    .hamburger{
+        display: none;
+    }
+    .header--nav{
+        .site--nav{
+            display: block;
+        }
+    }
+}
+
+@media only screen and (max-width: 1440px) {
+    .site--logo {
+        img{
+            height: 90px;
+        }
+    }
+
+    .header--container{
+        //max-width: 1140px;
+    }
+
+    .header--nav {
+        padding: 30px 0px;
+    }
+}
+
+@media only screen and (max-width: 1140px) {
+    .header--container{
+      //  max-width: 780px;
+    }
+    .header--top{
+        padding: 4px 0px;
+        .header--contact-list{
+            display: none;
+        }
+    }
+    .header--nav{
+        padding: 15px 0px;
+       
+        .site--nav{
+            transition: all .5s ease-in-out;
+            transform-origin: left top;
+            transform: scaleY(0);
+            overflow: hidden;
+            opacity: 0;   
+            position: absolute;
+            width: 100%;
+            top: calc(100%);
+            left:0;
+            right: 0;
+            background-color: $color-four; 
+            padding: 20px 0px 50px 0px;
+            .menu{
+                padding: 0px 8.33%;
+                margin: auto;
+                width: 100%;
+            }
+        }
+        &.is--active{
+            .site--nav{
+                transform: scaleY(1);
+                opacity: 1;
+            }
+           
+        }
+       
+    }
+    .site--logo {
+        img{
+            height: 80px;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+

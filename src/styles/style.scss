@@ -1,0 +1,36 @@
+//typography
+@import 'fonts';
+
+
+// layout css
+@import "./grid";
+@import "./section";
+
+// @import "../blocks/**/style.scss";
+@import "./global";
+@import "./style/style";
+@import "../blocks/section/styles/style.scss";
+@import "../blocks/row/styles/style.scss";
+@import "../blocks/column/styles/style.scss";
+@import "../blocks/header/navigation/styles/style.scss";
+@import "../blocks/header/breadcum/styles/style.scss";
+@import "../blocks/header/styles/style.scss";
+@import "../blocks/map/styles/style.scss";
+@import "../blocks/footer/styles/style.scss";
+@import "../blocks/footer/contact/styles/style.scss";
+@import "../blocks/button/styles/style.scss";
+@import "../blocks/iconbox/styles/style.scss";
+@import "../blocks/contactperson/styles/style.scss";
+@import "../blocks/contactform/styles/style.scss";
+@import "../blocks/divider/styles/style.scss";
+
+@import "../blocks/timeline/styles/style.scss";
+@import "../blocks/slider/styles/style.scss";
+@import "../blocks/logoslider/styles/style.scss";
+@import "../blocks/tabslider/styles/style.scss";
+@import './glide/glide.core.scss';
+@import './glide/glide.theme.scss';
+
+
+//media global
+@import "./media";

@@ -1,0 +1,46 @@
+{
+	"$schema": "https://json.schemastore.org/block.json",
+	"apiVersion": 2,
+	"name": "tbblocks/tabslideritem",
+	"version": "0.1.5",
+	"title": "Tab Slider Item",
+	"category": "theme",
+    "keywords": ["slider", "slide", "tab"],
+	"description": "A gutenberg block to use for Tab Slider Item.",
+	"supports": {
+		"html": false,
+		"anchor": true
+	},
+    "attributes": {
+        "slideId": {
+            "type": "number",
+            "default": 1
+        },				
+        "outerParent": {
+            "type": "object",
+            "default": {}
+        },
+        "mediaId": {
+            "type": "number"
+        },
+        "mediaUrl": {
+            "type": "string",
+            "default": ""
+        },
+        "xsimageUrl": {
+            "type": "string",
+            "default": ""
+        },
+        "mdimageUrl": {
+            "type": "string",
+            "default": ""
+        },
+        "mediaAlt": {
+            "type": "string",
+            "default": ""
+        }
+    },
+    "parent": [ "tbblocks/tabslider" ],
+	"textdomain": "tbblocks",
+    "editorScript": "blocks-4.js"
+}

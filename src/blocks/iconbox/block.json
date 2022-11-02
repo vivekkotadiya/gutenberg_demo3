@@ -1,0 +1,17 @@
+{
+	"$schema": "https://json.schemastore.org/block.json",
+	"apiVersion": 2,
+	"name": "tbblocks/iconbox",
+	"version": "0.1.0",
+	"title": "IconBox Collections",
+	"category": "theme",
+	"keywords": [ "icon", "iconbox" ],
+	"description": "A gutenberg block to use for Icon with Text.",
+	"supports": {
+		"html": false,
+		"anchor": true
+	},
+	"textdomain": "tbblocks",
+	"parent": [ "tbblocks/section" ],
+	"editorScript": "blocks-5.js"
+}

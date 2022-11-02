@@ -1,0 +1,17 @@
+{
+	"$schema": "https://json.schemastore.org/block.json",
+	"apiVersion": 2,
+	"name": "tbblocks/logoslider",
+	"version": "0.1.5",
+	"title": "Logo Slider",
+	"category": "theme",
+    "keywords": ["slider", "slide", "logo"],
+	"description": "A gutenberg block to use for Logo Slider.",
+	"supports": {
+		"html": false,
+		"anchor": true
+	},
+	"parent": [ "tbblocks/section" ],
+	"textdomain": "tbblocks",
+	"editorScript": "blocks-4.js"
+}

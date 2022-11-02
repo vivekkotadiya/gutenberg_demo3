@@ -1,0 +1,18 @@
+{
+	"$schema": "https://json.schemastore.org/block.json",
+	"apiVersion": 2,
+	"name": "tbblocks/contactperson",
+	"version": "0.1.0",
+	"title": "Contact Person Collection",
+	"category": "theme",
+	"keywords": [ "icon", "Person", "Collection" ],
+	"description": "A gutenberg block to use for Contact person.",
+	"supports": {
+		"html": true,
+		"anchor": true
+	},
+   
+	"textdomain": "tbblocks",
+	"parent": [ "tbblocks/section" ],
+	"editorScript": "blocks-5.js"
+}

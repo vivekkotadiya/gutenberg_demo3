@@ -1,0 +1,28 @@
+{
+	"$schema": "https://json.schemastore.org/block.json",
+	"apiVersion": 2,
+	"name": "tbblocks/map",
+	"title": "Map",
+	"category": "theme",
+	"attributes": {
+		"address": {
+			"type": "string"
+		},
+		"zoom": {
+			"type": "number",
+			"default": 18
+		},
+		"pinned": {
+			"type": "boolean",
+			"default": false
+		},
+		"height": {
+			"type": "number",
+			"default": 300
+		}
+	},
+	"textdomain": "tbblocks",
+	"editorScript": "blocks-5",
+	"parent": [ "tbblocks/column" ],
+	"description": "Add an address or location to drop a pin on a Google map."
+}

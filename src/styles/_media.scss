@@ -1,0 +1,59 @@
+@media only screen and (max-width: 460px) {
+    .container{
+        max-width: 300px;
+    }
+}  
+
+@media only screen and (min-width: 461px) {
+    .container{
+        max-width: 440px;
+    }
+}
+
+@media only screen and (min-width: 769px) {
+    .container{
+        max-width: 740px;
+    }
+}
+
+@media only screen and (min-width: 1141px) {
+    .container{
+        max-width: 1100px;
+    }
+
+    .headline--style-one{
+        font-size: 30px;
+        line-height: 32px;
+    }
+
+    .headline--style-three{
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+    .text--style-two{
+        font-size: 21px;
+        line-height: 30px; 
+    }
+
+}
+@media only screen and (min-width: 1441px) {
+    .container{
+        max-width: 1400px;
+    }
+   
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

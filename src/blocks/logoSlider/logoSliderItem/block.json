@@ -1,0 +1,54 @@
+{
+	"$schema": "https://json.schemastore.org/block.json",
+	"apiVersion": 2,
+	"name": "tbblocks/logoslideritem",
+	"version": "0.1.5",
+	"title": "Logo Slider Item",
+	"category": "theme",
+    "keywords": ["slider", "slide", "item", "logo"],
+	"description": "A gutenberg block to use for Logo Slider Item.",
+	"supports": {
+		"html": false,
+		"anchor": true
+	},
+    "attributes": {
+        "slideId": {
+            "type": "number",
+            "default": 1
+        },
+        "mediaId": {
+            "type": "number"
+        },
+        "mediaUrl": {
+            "type": "string",
+            "default": ""
+        },
+        "xsmediaUrl": {
+            "type": "string",
+            "default": ""
+        },
+        "mdmediaUrl": {
+            "type": "string",
+            "default": ""
+        },
+        "mediaAlt": {
+            "type": "string",
+            "default": ""
+        },
+        "linkUrl": {
+            "type": "string",
+            "default": ""
+        },
+        "openNewTab": {
+            "type": "boolean",
+            "default": false
+        },
+        "linkTitle": {
+            "type": "string",
+            "default": ""
+        }
+    },
+    "parent": [ "tbblocks/logoslider" ],
+	"textdomain": "tbblocks",
+	"editorScript": "blocks-4.js"
+}

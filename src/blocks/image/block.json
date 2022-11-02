@@ -1,0 +1,59 @@
+{
+	"$schema": "https://json.schemastore.org/block.json",
+	"apiVersion": 2,
+	"name": "tbblocks/image",
+	"version": "0.1.5",
+	"title": "Image",
+	"category": "theme",
+    "keywords": ["image", "picture"],
+	"description": "A gutenberg block to use for Image.",
+	"supports": {
+		"html": false,
+		"anchor": true
+	},
+	"attributes": {
+        "imageUrl" : {
+            "type": "string",
+            "default": ""
+        },
+		"xsimageUrl" : {
+			"type": "string",
+			"default": ""
+		},
+        "mdimageUrl" : {
+			"type": "string",
+			"default": ""
+		},
+        "imageId" : {
+            "type": "number",
+            "default": ""
+        },
+        "altText" : {
+            "type": "string",
+            "default": ""
+        },
+		"width" : {
+			"type": "string",
+			"default": "one"
+		},
+		"align" : {
+			"type": "string",
+			"default": "left"
+		},
+		"hideXS": {
+			"type": "boolean",
+			"default": false
+		},
+		"hideMD": {
+			"type": "boolean",
+			"default": false
+		},
+		"hideLG": {
+			"type": "boolean",
+			"default": false
+		}
+	},
+	"textdomain": "tbblocks",
+	"parent": [ "tbblocks/column" ],
+	"editorScript": "blocks-3.js"
+}
